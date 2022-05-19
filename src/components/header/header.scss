@@ -1,1 +1,135 @@
+.header {
+  width: 1920px;
+  display: flex;
+  flex-direction: row;
+  height: 152px;
+  align-items: center;
+  margin: 0 auto;
+}
+.header--logo {
+  width: 100px;
+}
+.header--logo-mgLeft {
+  margin-left: 63px;
+}
 
+.header--burger {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid $secondary;
+  position: relative;
+}
+.header--burger-mgLeft {
+  margin-left: 51px;
+}
+
+.header--burger > span,
+.header--burger > span::before,
+.header--burger > span::after {
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: $secondary;
+}
+.header--burger > span {
+  top: 25px;
+  left: 18px;
+}
+.header--burger > span::before {
+  content: '';
+  top: -8px;
+}
+.header--burger > span::after {
+  content: '';
+  top: 8px;
+}
+
+.header--nav {
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    .header--navItem a {
+      color: $secondary;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-family: $boldFont;
+    }
+  }
+}
+.header--nav-mgLeft {
+  margin-left: 30px;
+}
+
+.header--phoneLink {
+  letter-spacing: 0.08em;
+  color: $secondary;
+  span {
+    color: $black;
+    font-family: $boldFont;
+  }
+}
+.header--phoneLink-mgLeft {
+  margin-left: 98px;
+}
+
+.header--callMeLink {
+  border-bottom: 1px dotted $roseDark;
+  padding-bottom: 5px;
+  a {
+    font-size: 14px;
+    color: $roseDark;
+    text-transform: uppercase;
+    font-family: $boldFont;
+  }
+}
+.header--callMeLink-mgLeft {
+  margin-left: 71px;
+}
+
+.header--socialContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+.header--socialContainer-mgLeft {
+  margin-left: 63px;
+}
+.header--toolsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  .header--toolsItem {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+    border: 1px solid $grayLight;
+    position: relative;
+    img {
+      position: absolute;
+      top: 15px;
+      left: 17px;
+    }
+  }
+}
+.header--cartTag {
+  position: absolute;
+  left: 40px;
+  top: 3px;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  background-color: $rose;
+  color: $white;
+  font-family: 'Lato-Bold', sans-serif;
+  font-weight: 800;
+  font-size: 11px;
+  line-height: 16px;
+}
+.header--toolsContainer-mgLeft {
+  margin-left: 60px;
+}
