@@ -1,6 +1,7 @@
 header.header-wrapper 
 	.header
-		img.header--logo.header--logo-mgLeft(src="./../../assets/images/logo.png" alt="Дымоход лого")
+		a(href="#")
+			img.header--logo.header--logo-mgLeft(src="./../../assets/images/logo.png" alt="Дымоход лого")
 		img.header--burger.header--burger-mgLeft(type="button" src="./../../assets/images/burger.svg")
 		
 		nav.header--nav.header--nav-mgLeft
@@ -19,13 +20,13 @@ header.header-wrapper
 			a(href="#") Перезвоните мне
 		div.header--socialContainer.header--socialContainer-mgLeft
 			a.header-socialItem(href="#" target="_blank")
-				img.header-socialIcon(src="./../../assets/images/vk.svg" alt="Вконтакте лого")
+				include ./../../assets/images/vk.svg
 			a.header-socialItem(href="#" target="_blank")
-				img.header-socialIcon(src="./../../assets/images/telegram.svg" alt="Телеграм лого")
+				include ./../../assets/images/telegram.svg
 			a.header-socialItem(href="#" target="_blank")
-				img.header-socialIcon(src="./../../assets/images/instagram.svg" alt="Инстаграм лого")
+				include ./../../assets/images/instagram.svg
 			a.header-socialItem(href="#" target="_blank")
-				img.header-socialIcon(src="./../../assets/images/whatsapp.svg" alt="Whatsapp лого")
+				include ./../../assets/images/whatsapp.svg
 		div.header--toolsContainer.header--toolsContainer-mgLeft
 			button.header--toolsItem(type="button" onClick="")
 				img(src="./../../assets/images/search.svg" alt="Поиск")

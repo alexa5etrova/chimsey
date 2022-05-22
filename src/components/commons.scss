@@ -1,0 +1,18 @@
+.commons--paragragh {
+  font-family: $mainFont;
+  font-size: 16px;
+  line-height: 30px;
+}
+.commons--header {
+  font-family: $semiBoldFont;
+  font-size: 40px;
+  line-height: 48.76px;
+  padding: 45px 0;
+  span {
+    display: block;
+    width: 75px;
+    height: 5px;
+    background-color: $rose;
+    margin-bottom: 10px;
+  }
+}

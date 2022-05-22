@@ -1,0 +1,68 @@
+.footer--wrapper {
+  width: 100%;
+  background-color: $primary;
+  height: 350px;
+}
+.footer {
+  width: 1220px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 438px 472px 312px;
+}
+.footer--item {
+  margin-top: 88px;
+  .footer--itemHeader {
+    color: $white;
+    font-family: $boldFont;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+  }
+  .footer--catalogue {
+    .footer--catalogueList {
+      list-style-type: none;
+      display: grid;
+      grid-template-columns: 207px auto;
+      row-gap: 18px;
+      .footer--catalogueListItem a {
+        color: $white;
+        font-size: 14px;
+        line-height: 17.07px;
+      }
+      .footer--catalogueListItem a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.footer--timeItem {
+  .footer--time {
+    margin: 15px 0;
+    .footer-timeParagragh {
+      font-family: 'Lato-Regular', sans-serif;
+      font-size: 14px;
+      font-style: normal;
+      color: $white;
+      .footer--days {
+        color: $secondaryLight;
+      }
+    }
+  }
+  .footer--social {
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+    margin-top: 30px;
+    .footer--socialItem {
+      svg {
+        width: 21px;
+        fill: $secondaryLight;
+      }
+    }
+    .footer--socialItem:hover {
+      svg {
+        fill: $rose;
+      }
+    }
+  }
+}

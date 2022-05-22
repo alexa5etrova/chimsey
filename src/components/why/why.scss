@@ -1,0 +1,26 @@
+.why--container {
+  margin-top: 57px;
+
+  .why--paragragh-loc {
+    margin-top: 5px;
+  }
+
+  .why--facts {
+    padding: 52px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 79px;
+    .why--factsHeader {
+      font-size: 20px;
+      font-family: $boldFont;
+      margin: 35px 0 14px 0;
+    }
+    .why--factsText {
+      line-height: 30px;
+      .why--factsItem-roseText {
+        font-family: $semiBoldFont;
+        color: $rose;
+      }
+    }
+  }
+}

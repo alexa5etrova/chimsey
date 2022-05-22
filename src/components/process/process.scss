@@ -1,0 +1,49 @@
+.process--container {
+  margin-top: 63px;
+  height: 759px;
+  .process--paragragh {
+    margin: 23px 0 100px 0;
+  }
+  .process--videoContainer {
+    position: relative;
+    .process--videowrapper {
+      width: 771px;
+      height: 438px;
+      position: absolute;
+      top: 0px;
+      left: 216px;
+      z-index: 3;
+      .process--video {
+        width: 771px;
+        height: 438px;
+      }
+    }
+    .process--orangeBlobLeft {
+      position: absolute;
+      z-index: 1;
+      top: 61px;
+      left: 32px;
+    }
+    .process--orangeBlobRight {
+      position: absolute;
+      z-index: 1;
+      top: -37px;
+      right: 32px;
+      width: 630px;
+    }
+    .process--dotsLeft {
+      position: absolute;
+      z-index: 2;
+      top: 225px;
+      left: 96px;
+      width: 31px;
+    }
+    .process--dotsRight {
+      position: absolute;
+      z-index: 2;
+      top: -49px;
+      right: 108px;
+      width: 31px;
+    }
+  }
+}

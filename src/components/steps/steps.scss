@@ -1,0 +1,20 @@
+.steps--list {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .steps--listItem {
+    display: grid;
+    grid-template-columns: 70px 515px;
+    align-items: center;
+    margin-top: 10px;
+    .steps--listNumber {
+      font-family: $boldFont;
+      font-size: 70px;
+      color: $rose;
+      opacity: 20%;
+    }
+    .steps--listText {
+      line-height: 30px;
+    }
+  }
+}

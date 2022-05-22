@@ -1,0 +1,37 @@
+.hero--header {
+  font-family: $boldFont;
+  font-size: 60px;
+}
+.hero--header-mgTop {
+  margin-top: 28px;
+  margin-bottom: 43px;
+}
+
+.hero--breadCrumbsContainer {
+  padding: 11px 0;
+  border-top: 1px solid $grayLight;
+  border-bottom: 1px solid $grayLight;
+  span {
+    color: $secondary;
+  }
+  .hero--breadCrumbsItem {
+    font-size: 12px;
+  }
+  .hero--breadCrumbsItem-nonActive {
+    color: #b1b1b1;
+  }
+  .hero--breadCrumbsItem-active {
+    color: $secondary;
+  }
+}
+.hero-paragraghLink {
+  color: $rose;
+  font-family: $semiBoldFont;
+  &:hover {
+    color: $secondary;
+    cursor: pointer;
+  }
+}
+.hero--container-pdtop {
+  padding-top: 90px;
+}

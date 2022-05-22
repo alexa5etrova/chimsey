@@ -8,6 +8,7 @@ body {
 }
 img {
   display: block;
+  box-sizing: content-box;
 }
 a {
   text-decoration: none;
@@ -15,4 +16,8 @@ a {
 button {
   background-color: unset;
   border: none;
+}
+main {
+  width: 1220px;
+  margin: 0 auto;
 }
