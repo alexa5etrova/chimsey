@@ -35,3 +35,27 @@
 .hero--container-pdtop {
   padding-top: 90px;
 }
+
+@media (max-width: 1220px) {
+  .hero--header {
+    font-size: 45px;
+  }
+  .hero--header-mgTop {
+    margin: 42px 0 32px 0px;
+  }
+  .hero--container-pdtop {
+    padding-top: 64px;
+  }
+}
+@media (max-width: 767px) {
+  .hero--header {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .hero--header-mgTop {
+    margin: 28px 0 12px 0px;
+  }
+  .hero--container-pdtop {
+    padding-top: 20px;
+  }
+}

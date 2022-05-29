@@ -18,6 +18,29 @@ button {
   border: none;
 }
 main {
-  width: 1220px;
+  max-width: 1200px;
+  width: 100%;
+  padding: 10px;
   margin: 0 auto;
+}
+@media (max-width: 1920px) {
+  main {
+    padding: 15px;
+  }
+}
+@media (max-width: 1220px) {
+  main {
+    padding: 15px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+  main {
+    max-width: 737px;
+    padding: 15px;
+    width: 100%;
+  }
 }

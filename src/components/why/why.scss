@@ -24,3 +24,60 @@
     }
   }
 }
+
+@media (max-width: 1220px) {
+  .why--container {
+    margin-top: 48px;
+    .why--paragragh-loc {
+      margin-top: 36px;
+    }
+    .why--facts {
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      gap: 31px 87px;
+
+      .why--factsItem {
+        img {
+          margin: 0 auto;
+        }
+        .why--factsHeader {
+          font-size: 18px;
+          margin: 26px 0 7px 0;
+        }
+        .why--factsText {
+          font-size: 14px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .why--container {
+    margin-top: 26px;
+    .why--paragragh-loc {
+      margin-top: 25px;
+    }
+    .why--facts {
+      flex-wrap: wrap;
+      text-align: center;
+      justify-content: center;
+      gap: 23px 0px;
+
+      .why--factsItem {
+        img {
+          margin: 0 auto;
+        }
+        .why--factsHeader {
+          font-size: 18px;
+          margin: 26px 0 7px 0;
+        }
+        .why--factsText {
+          font-size: 14px;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}

@@ -9,9 +9,8 @@
     .process--videowrapper {
       width: 771px;
       height: 438px;
-      position: absolute;
-      top: 0px;
-      left: 216px;
+      position: relative;
+      margin: 0 auto;
       z-index: 3;
       .process--video {
         width: 771px;
@@ -44,6 +43,52 @@
       top: -49px;
       right: 108px;
       width: 31px;
+    }
+  }
+}
+
+@media (max-width: 1220px) {
+  .process--container {
+    margin-top: 51px;
+    height: 759px;
+    .process--paragragh {
+      margin: 36px 0 32px 0;
+    }
+    .process--videoContainer {
+      img {
+        display: none;
+      }
+      .process--videowrapper {
+        max-width: 100%;
+        height: 419px;
+        margin: 0 auto;
+        .process--video {
+          max-width: 100%;
+          height: 419px;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .process--container {
+    margin-top: 3px;
+    height: 602px;
+    .process--paragragh {
+      margin: 25px 0 50px 0;
+    }
+    .process--videoContainer {
+      .process--videowrapper {
+        max-width: 96%;
+        height: 96%;
+        margin: 0 auto;
+        .process--video {
+          max-width: 96%;
+          height: 96%;
+          margin: 0 auto;
+        }
+      }
     }
   }
 }

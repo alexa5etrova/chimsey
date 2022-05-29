@@ -74,3 +74,53 @@
     z-index: 2;
   }
 }
+@media (max-width: 1220px) {
+  .banner--container {
+    padding: 29px 0;
+    grid-template-columns: 730px;
+  }
+  .banner--headerContainer {
+    margin-bottom: 20px;
+  }
+  .banner--header {
+    font-size: 30px;
+  }
+  .banner--header-rose {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  .banner-image {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner--container {
+    padding: 55px 0;
+    grid-template-columns: minmax(290px, 737px);
+  }
+  .banner--header {
+    font-size: 18px;
+  }
+  .banner--header-rose {
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .banner--headerContainer {
+    margin-bottom: 11px;
+  }
+  .banner--list {
+    .banner--listItem {
+      padding: 0 0 26px 0;
+      .banner--listDot {
+        align-self: center;
+        display: inline-block;
+        width: 9px;
+        height: 9px;
+        background-color: $orange;
+        border-radius: 50%;
+        margin: 0 16px 0 16px;
+      }
+    }
+  }
+}

@@ -18,3 +18,43 @@
     }
   }
 }
+@media (max-width: 1220px) {
+  .steps--list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 20px;
+    .steps--listItem {
+      display: grid;
+      grid-template-columns: 40px 300px;
+      margin-bottom: 20px;
+      .steps--listNumber {
+        font-size: 50px;
+      }
+      .steps--listText {
+        font-size: 14px;
+        line-height: 26px;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .steps--container {
+    margin-top: 14px;
+  }
+  .steps--list {
+    grid-template-columns: 1fr;
+    margin-top: 0px;
+    .steps--listItem {
+      grid-template-columns: 48px auto;
+      margin-bottom: 14px;
+      .steps--listNumber {
+        font-size: 50px;
+      }
+      .steps--listText {
+        font-size: 14px;
+        line-height: 26px;
+      }
+    }
+  }
+}

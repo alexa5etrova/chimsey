@@ -2,6 +2,7 @@
   width: 100%;
   background-color: $primary;
   height: 350px;
+  padding: 10px;
 }
 .footer {
   width: 1220px;
@@ -62,6 +63,33 @@
     .footer--socialItem:hover {
       svg {
         fill: $rose;
+      }
+    }
+  }
+}
+.footer--social-nonactive {
+  display: none;
+}
+@media (max-width: 1220px) {
+  .footer--wrapper {
+    height: 70px;
+  }
+  .footer {
+    display: none;
+    .footer--social {
+      display: block;
+      text-align: center;
+    }
+  }
+  .footer--social-nonactive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 42px;
+    margin-top: 18px;
+    .footer--social-nonactive {
+      svg {
+        width: 34px;
       }
     }
   }

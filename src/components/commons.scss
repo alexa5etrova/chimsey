@@ -16,3 +16,22 @@
     margin-bottom: 10px;
   }
 }
+
+@media (max-width: 1220px) {
+  .commons--header {
+    font-size: 30px;
+    line-height: 37px;
+    padding: 3px 0;
+  }
+}
+@media (max-width: 767px) {
+  .commons--paragragh {
+    font-size: 14px;
+    line-height: 26px;
+  }
+  .commons--header {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 3px 0;
+  }
+}

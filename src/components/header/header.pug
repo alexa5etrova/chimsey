@@ -2,9 +2,19 @@ header.header-wrapper
 	.header
 		a(href="#")
 			img.header--logo.header--logo-mgLeft(src="./../../assets/images/logo.png" alt="Дымоход лого")
-		img.header--burger.header--burger-mgLeft(type="button" src="./../../assets/images/burger.svg")
-		
-		nav.header--nav.header--nav-mgLeft
+		button.header--burger.header--burger-mgLeft.header--burger-fixLeft(type="button" onclick='burgerBtnHandler()')
+			img( src="./../../assets/images/burger.svg")
+		nav.header--burgerMenu.header--burgerMenu-nonactive(id="burgerMenu")
+			ul.header--burgerList
+				li.header--navItem 
+					a(href="") Каталог товаров
+				li.header--navItem 
+					a(href="") Доставка и оплата
+				li.header--navItem 
+					a(href="") Цены
+				li.header--navItem 
+					a(href="") Контакты
+		nav.header--nav.header--nav-mgLeft#header-navMenu
 			ul
 				li.header--navItem 
 					a(href="#") Каталог товаров
@@ -28,10 +38,10 @@ header.header-wrapper
 			a.header-socialItem(href="#" target="_blank")
 				include ./../../assets/images/whatsapp.svg
 		div.header--toolsContainer.header--toolsContainer-mgLeft
-			button.header--toolsItem(type="button" onClick="")
-				img(src="./../../assets/images/search.svg" alt="Поиск")
-			button.header--toolsItem(type="button" onClick="") 
-				img(src="./../../assets/images/heart.svg" alt="Избранное")
-			button.header--toolsItem(type="button" onClick="")
-				img(src="./../../assets/images/cart.svg" alt="Корзина")
+			button.header--toolsItem.header--search(type="button" onClick="")
+				img(src="./assets/images/search.svg" alt="Поиск")
+			button.header--toolsItem.header--heart(type="button" onClick="") 
+				img(src="./assets/images/heart.svg" alt="Избранное")
+			button.header--toolsItem.header--cart(type="button" onClick="")
+				img(src="./assets/images/cart.svg" alt="Корзина")
 				div.header--cartTag 10
