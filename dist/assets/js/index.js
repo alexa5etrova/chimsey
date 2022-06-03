@@ -1,8 +1,8 @@
 (() => {
   // src/components/themeChangebtn/themeChangebtn.js
 })();
-//# sourceMappingURL=index.js.map const
-themeEl = document.getElementsByTagName('body')[0];
+//# sourceMappingURL=index.js.map
+var themeEl = document.getElementsByTagName('body')[0];
 if (localStorage.getItem('theme') == 'dark') {
   themeEl.classList.remove('lightTheme');
   themeEl.classList.add('darkTheme');
@@ -23,6 +23,7 @@ const themeChangeHandler = (event) => {
     localStorage.setItem('theme', 'light');
   }
 };
+
 const burgerBtnHandler = () => {
   let burgerMenu = document.getElementById('burgerMenu');
   if (burgerMenu.classList.contains('header--burgerMenu-nonactive')) {
