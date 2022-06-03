@@ -7,7 +7,7 @@
     <title>Дымоход</title>
     <link href="./assets/styles/main.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="lightTheme">
     <header class="header-wrapper"> 
       <div class="header"><a href="#"><img class="header--logo header--logo-mgLeft" src="./../../assets/images/logo.png" alt="Дымоход лого"></a>
         <button class="header--burger header--burger-mgLeft header--burger-fixLeft" type="button" onclick="burgerBtnHandler()"><img src="./../../assets/images/burger.svg"></button>
@@ -50,6 +50,7 @@
         </div>
       </div>
     </header>
+    <button class="hero--btnTheme" type="button" onclick="themeChangeHandler(event)">Сменить тему</button>
     <main>
       <h1 class="hero--header hero--header-mgTop">Монтаж дымоходов</h1>
       <nav class="hero--breadCrumbsContainer"><a class="hero--breadCrumbsItem hero--breadCrumbsItem-nonActive" href="#">Главная   </a><span>></span><a class="hero--breadCrumbsItem hero--breadCrumbsItem-active" href="#">  Монтаж дымоходов</a></nav>

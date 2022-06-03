@@ -1,8 +1,4 @@
-(() => {
-  // src/components/themeChangebtn/themeChangebtn.js
-})();
-//# sourceMappingURL=index.js.map const
-themeEl = document.getElementsByTagName('body')[0];
+const themeEl = document.getElementsByTagName('body')[0];
 if (localStorage.getItem('theme') == 'dark') {
   themeEl.classList.remove('lightTheme');
   themeEl.classList.add('darkTheme');
@@ -10,6 +6,7 @@ if (localStorage.getItem('theme') == 'dark') {
   themeEl.classList.add('lightTheme');
   themeEl.classList.remove('darkTheme');
 }
+
 const themeChangeHandler = (event) => {
   event.preventDefault();
 
@@ -21,15 +18,5 @@ const themeChangeHandler = (event) => {
     themeEl.classList.remove('darkTheme');
     themeEl.classList.add('lightTheme');
     localStorage.setItem('theme', 'light');
-  }
-};
-const burgerBtnHandler = () => {
-  let burgerMenu = document.getElementById('burgerMenu');
-  if (burgerMenu.classList.contains('header--burgerMenu-nonactive')) {
-    burgerMenu.classList.remove('header--burgerMenu-nonactive');
-    burgerMenu.classList.add('header--burgerMenu-active');
-  } else {
-    burgerMenu.classList.remove('header--burgerMenu-active');
-    burgerMenu.classList.add('header--burgerMenu-nonactive');
   }
 };

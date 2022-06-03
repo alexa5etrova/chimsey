@@ -1,7 +1,7 @@
 {
   "version": 3,
-  "sources": [],
-  "sourcesContent": [],
-  "mappings": "",
+  "sources": ["src/components/themeChangebtn/themeChangebtn.js"],
+  "sourcesContent": ["const themeEl = document.getElementsByTagName('body')[0];\r\nif (localStorage.getItem('theme') == 'dark') {\r\n  themeEl.classList.remove('lightTheme');\r\n  themeEl.classList.add('darkTheme');\r\n} else {\r\n  themeEl.classList.add('lightTheme');\r\n  themeEl.classList.remove('darkTheme');\r\n}\r\n\r\nconst themeChangeHandler = (event) => {\r\n  event.preventDefault();\r\n\r\n  if (themeEl.classList.contains('lightTheme')) {\r\n    themeEl.classList.remove('lightTheme');\r\n    themeEl.classList.add('darkTheme');\r\n    localStorage.setItem('theme', 'dark');\r\n  } else {\r\n    themeEl.classList.remove('darkTheme');\r\n    themeEl.classList.add('lightTheme');\r\n    localStorage.setItem('theme', 'light');\r\n  }\r\n};\r\n"],
+  "mappings": ";;AAAA,MAAM,UAAU,SAAS,qBAAqB,QAAQ;AACtD,MAAI,aAAa,QAAQ,YAAY,QAAQ;AAC3C,YAAQ,UAAU,OAAO;AACzB,YAAQ,UAAU,IAAI;AAAA,SACjB;AACL,YAAQ,UAAU,IAAI;AACtB,YAAQ,UAAU,OAAO;AAAA;",
   "names": []
 }

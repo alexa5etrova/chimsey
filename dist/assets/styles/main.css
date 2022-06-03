@@ -43,6 +43,16 @@ body {
   font-size: 16px;
 }
 
+.lightTheme {
+  background-color: white;
+  color: black;
+}
+
+.darkTheme {
+  background-color: #212121;
+  color: #f5f5f5;
+}
+
 img {
   display: block;
   -webkit-box-sizing: content-box;
@@ -59,13 +69,12 @@ button {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1220px;
   width: 100%;
-  padding: 10px;
   margin: 0 auto;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1919px) {
   main {
     padding: 15px;
   }
@@ -795,7 +804,7 @@ main {
 }
 .banner--container {
   display: grid;
-  grid-template-columns: 629px auto;
+  grid-template-columns: 600px auto;
   padding: 50px 0;
 }
 
@@ -843,31 +852,31 @@ main {
 .banner-image .banner--blob-image {
   position: absolute;
   top: -8px;
-  left: -15px;
+  left: 13px;
   z-index: 1;
 }
 .banner-image .banner--chimsey-image {
   position: absolute;
   top: -35px;
-  left: 164px;
+  left: 195px;
   z-index: 2;
 }
 .banner-image .banner--dotsLeft-image {
   position: absolute;
   top: -3px;
-  left: 130px;
+  left: 158px;
   z-index: 2;
 }
 .banner-image .banner--dotsRight-image {
   position: absolute;
   right: -99px;
-  bottom: -28px;
+  bottom: -29px;
   z-index: 2;
 }
 .banner-image .banner--triangleLeft-image {
   position: absolute;
   top: 140px;
-  left: 2px;
+  left: 33px;
   z-index: 2;
 }
 .banner-image .banner--triangleRight-image {
@@ -1460,13 +1469,14 @@ main {
   }
   .photo--container .photo--paragragh {
     margin-top: 31px;
+    margin-bottom: 70px;
   }
   .photo--container .photo--wrapper {
     margin-top: 35px;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
-    gap: 18px 32px;
+    gap: 26px 32px;
   }
   .photo--container .photo--wrapper .photo--photoItem {
     width: 226px;
@@ -1491,12 +1501,14 @@ main {
   }
   .photo--container .photo--paragragh {
     margin-top: 14px;
+    margin-bottom: 15px;
   }
   .photo--container .photo--wrapper {
     margin-top: 39px;
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
+    gap: 18px 32px;
   }
   .photo--container .photo--wrapper .photo--photoItem {
     width: 130px;
@@ -1519,6 +1531,19 @@ main {
     height: 30px;
   }
 }
+.hero--btnTheme {
+  position: absolute;
+  left: 20vw;
+  top: 1vh;
+  background-color: #4c858b;
+  color: white;
+  font-family: "Montserrat-SemiBold", sans-serif;
+  font-size: 14px;
+  height: 30px;
+  width: 120px;
+  border-radius: 5px;
+}
+
 .commons--paragragh {
   font-family: "Montserrat-Regular", sans-serif;
   font-size: 16px;

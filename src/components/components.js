@@ -6,3 +6,4 @@ import './steps/steps';
 import './why/why';
 import './form/form';
 import './process/process';
+import './themeChangebtn/themeChangebtn';

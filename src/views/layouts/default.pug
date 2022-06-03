@@ -8,8 +8,10 @@ html(lang="ru")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     title #{title ? title : 'Дымоход'}
     link(href="./assets/styles/main.css" rel="stylesheet")
-  body
+  body.lightTheme
+    
     include ../../components/header/header
+    include ../../components/themeChangebtn/themeChangebtn
     main
       include ../../components/hero/hero
       include ../../components/banner/banner
